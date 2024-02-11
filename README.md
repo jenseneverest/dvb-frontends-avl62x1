@@ -3,6 +3,15 @@ This repository contains Availink AVL62x1 S/S2/S2X demodulator driver and Airoha
 
 Refer to [dvb-frontends-availink](https://github.com/availink/dvb-frontends-availink) and [documentation](https://github.com/availink/documentation) for details related to this code.
 
+### Side Note 
+
+Instructions to build driver are in github and it's easy. (If using Ubuntu 22.04 add ccflags-y += -march=armv7-a to Makefile)
+https://github.com/edision-open/dvb-frontends-avl62x1
+When avl6261.ko is ready just ftp to /lib/modules/5.15.0/extra/ and reboot.
+
+From here:
+https://www.world-of-satellite.com/showthread.php?66349-Display-SNR-when-signal-is-not-locked
+
 ### Prerequisites
 First install Git and the build dependencies:
 - Ubuntu package install
